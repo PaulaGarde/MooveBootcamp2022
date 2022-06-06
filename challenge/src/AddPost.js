@@ -2,8 +2,15 @@ import React from "react";
 
 
 export default function AddPost(props){
+    const addButton = (msn) => {
+        alert(msn);
+    };
+
     return(
-        <button className= " h-8 w-40 bg-teal-900 text-red-300 hover:bg-white rounded-full">Add Post It</button>
+        <button className= "mx-16 bg-purpleie hover:bg-yellowie text-white text-center py-2 px-4 rounded"
+        onClick={() => addButton("Aqui deberia agregar nueva nota") }
+        >Add Post It
+        </button>
     );
 }
 

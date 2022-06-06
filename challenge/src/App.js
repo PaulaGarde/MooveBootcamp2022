@@ -8,24 +8,29 @@ import AddPost from "./AddPost";
 
 
 const notes = [
-  { text: 'Hacer tarea'},
+  { text: 'lorem lHacer tarea'},
+  { text: 'Tidy Up'},
   { text: 'Reading book'},
   { text: 'Cook dinner'},
 
 ]
 
 export default function App() {
+
+  // const eliminatePost =notes.filter(note =>!!note.deleted).length;
+  // const totalNotes = notes.length;
+
   return (
 
     
-    <React.Fragment>
-      <h1 className="text-amber-600 text-4xl"> My Posts It</h1>
+    <React.Fragment className="grid">
+      <h1 className="text-5xl text-blueie place-self-center p-8 "> My Posts It</h1>
 
-      <AddPost />
+      <AddPost className="grid" />
 
       <PostItem />
           
-      <PostList />
+      <PostList  />
         { notes.map (note =>(
           <PostItem key={note.text} text={note.text} />
         ))}
