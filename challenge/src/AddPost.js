@@ -8,9 +8,8 @@ export default function AddPost(props){
 
     return(
         <button className= "mx-16 bg-purpleie hover:bg-yellowie text-white text-center py-2 px-4 rounded"
-        onClick={() => addButton("Aqui deberia agregar nueva nota") }
+        onClick={() => addButton("Here,  It should be  add a post it  🥸") }
         >Add Post It
         </button>
     );
 }
-

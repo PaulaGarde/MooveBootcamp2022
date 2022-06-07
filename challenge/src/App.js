@@ -8,22 +8,19 @@ import AddPost from "./AddPost";
 
 
 const notes = [
-  { text: 'lorem lHacer tarea'},
+  { text: 'Studing React JS'},
   { text: 'Tidy Up'},
   { text: 'Reading book'},
   { text: 'Cook dinner'},
-
 ]
 
 export default function App() {
 
-  // const eliminatePost =notes.filter(note =>!!note.deleted).length;
-  // const totalNotes = notes.length;
 
   return (
 
     
-    <React.Fragment className="grid">
+    <React.Fragment className="bg-slate-800">
       <h1 className="text-5xl text-blueie place-self-center p-8 "> My Posts It</h1>
 
       <AddPost className="grid" />
